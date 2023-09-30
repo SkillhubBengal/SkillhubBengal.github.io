@@ -42,7 +42,7 @@ https://templatemo.com/tm-590-topic-listing
                     </a>
 
                     <div class="d-lg-none ms-auto me-4">
-                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                       
                     </div>
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,9 +63,7 @@ https://templatemo.com/tm-590-topic-listing
                                 <a class="nav-link click-scroll" href="index.html#section_3">How it works</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="index.html#section_4">FAQs</a>
-                            </li>
+                            
     
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
@@ -83,7 +81,7 @@ https://templatemo.com/tm-590-topic-listing
                         </ul>
 
                         <div class="d-none d-lg-block">
-                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                           
                         </div>
                     </div>
                 </div>
@@ -96,11 +94,7 @@ https://templatemo.com/tm-590-topic-listing
 
                         <div class="col-lg-5 col-12 mb-5">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
-
-                                    <li class="breadcrumb-item active" aria-current="page">Web Design</li>
-                                </ol>
+                                
                             </nav>
 
                             <h2 class="text-white">Introduction to <br> Web Design 101</h2>
@@ -143,54 +137,282 @@ https://templatemo.com/tm-590-topic-listing
                                     }
                                 </style>
                             </head>
-                            <body>
-                                <h1>Course Structure: Web Design and Development</h1>
-                                <ul>
-                                    <li><a href="#" onclick="showWeekDetails(1)">Week 1: Introduction to Web Development</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(2)">Week 2: HTML (Hypertext Markup Language)</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(3)">Week 3: CSS (Cascading Style Sheets)</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(4)">Week 4: CSS Layout</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(5)">Week 5: Introduction to JavaScript</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(6)">Week 6: DOM Manipulation with JavaScript</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(7)">Week 7: Introduction to Bootstrap</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(8)">Week 8: Advanced Bootstrap</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(9)">Week 9: Introduction to React</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(10)">Week 10: Advanced React</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(11)">Week 11: Introduction to PHP</a></li>
-                                    <li><a href="#" onclick="showWeekDetails(12)">Week 12: Database Development with MySQL</a></li>
-                                </ul>
-                            
-                                <div class="week-details" id="week-details">
-                                    <!-- Week details content will be displayed here -->
-                                </div>
-                            
-                                <script>
-                                    // JavaScript function to show week details
-                                    function showWeekDetails(weekNumber) {
-                                        // Define week details content
-                                        const weekDetails = {
-                                            1: "Understanding the Internet and the World Wide Web<br>Basics of Client-Server Architecture<br>Introduction to Web Browsers and Development Tools<br>Setting up a Development Environment (Text Editor, Browser)",
-                                            2: "Introduction to HTML<br>HTML Document Structure<br>Text Formatting and Semantic Elements<br>Creating Lists and Links<br>Working with Images and Forms<br>HTML5 Features",
-                                            3: "Basics of CSS<br>CSS Syntax and Selectors<br>Styling Text and Fonts<br>Working with Colors and Backgrounds",
-                                            4: "Box Model and Layout Properties<br>Positioning Elements<br>Flexbox Layout<br>CSS Grid Layout<br>Responsive Web Design with Media Queries",
-                                            5: "JavaScript Basics<br>Variables, Data Types, and Operators<br>Conditional Statements and Loops<br>Functions and Scope",
-                                            6: "Understanding the Document Object Model (DOM)<br>Selecting and Modifying DOM Elements<br>Event Handling and Event Listeners<br>Working with Forms and Validation",
-                                            7: "What is Bootstrap?<br>Setting up Bootstrap in Your Project<br>Grid System and Responsive Design<br>Bootstrap Components (Navbar, Forms, Buttons)",
-                                            8: "Bootstrap Modals and Carousels<br>Customizing Bootstrap with Sass<br>Building a Responsive Website with Bootstrap",
-                                            9: "What is React?<br>Setting up a React Development Environment<br>Components and Props<br>State and Lifecycle",
-                                            10: "Handling Forms and User Input<br>Routing with React Router<br>Managing Global State with Context API<br>Building a React Application",
-                                            11: "PHP Basics and Syntax<br>Working with Variables and Data Types<br>Conditional Statements and Loops<br>PHP Functions and Forms",
-                                            12: "Introduction to MySQL and Database Design<br>PHP-MySQL Integration<br>Performing CRUD Operations<br>Building a Dynamic Web Application"
-                                        };
-                            
-                                        // Get the week details div and update its content
-                                        const weekDetailsDiv = document.getElementById("week-details");
-                                        weekDetailsDiv.innerHTML = `<h2>Week ${weekNumber} Details:</h2>${weekDetails[weekNumber]}`;
-                            
-                                        // Display the week details div
-                                        weekDetailsDiv.style.display = "block";
-                                    }
-                                </script>
+                           
+                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="accordion" id="courseAccordion">
+            <!-- Week 1-2: Introduction to Web Development -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week1-2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week1-2-content" aria-expanded="true" aria-controls="week1-2-content">
+                        Week 1-2: Introduction to Web Development
+                    </button>
+                </h2>
+                <div id="week1-2-content" class="accordion-collapse collapse show" aria-labelledby="week1-2" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 1 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week1-content" aria-expanded="true" aria-controls="week1-content">
+                            Week 1: Introduction to Web Development
+                        </button>
+                        <div id="week1-content" class="accordion-collapse collapse show" aria-labelledby="week1">
+                            <div class="accordion-body">
+                                Understanding the Internet and the World Wide Web<br>
+                                Basics of Client-Server Architecture<br>
+                                Introduction to Web Browsers and Development Tools<br>
+                                Setting up a Development Environment (Text Editor, Browser)
+                            </div>
+                        </div>
+
+                        <!-- Week 2 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week2-content" aria-expanded="true" aria-controls="week2-content">
+                            Week 2: HTML (Hypertext Markup Language)
+                        </button>
+                        <div id="week2-content" class="accordion-collapse collapse show" aria-labelledby="week2">
+                            <div class="accordion-body">
+                                Introduction to HTML<br>
+                                HTML Document Structure<br>
+                                Text Formatting and Semantic Elements<br>
+                                Creating Lists and Links<br>
+                                Working with Images and Forms<br>
+                                HTML5 Features
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 3-4: CSS (Cascading Style Sheets) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week3-4">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week3-4-content" aria-expanded="true" aria-controls="week3-4-content">
+                        Week 3-4: CSS (Cascading Style Sheets)
+                    </button>
+                </h2>
+                <div id="week3-4-content" class="accordion-collapse collapse" aria-labelledby="week3-4" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 3 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week3-content" aria-expanded="true" aria-controls="week3-content">
+                            Week 3: Introduction to CSS
+                        </button>
+                        <div id="week3-content" class="accordion-collapse collapse" aria-labelledby="week3">
+                            <div class="accordion-body">
+                                Basics of CSS<br>
+                                CSS Syntax and Selectors<br>
+                                Styling Text and Fonts<br>
+                                Working with Colors and Backgrounds
+                            </div>
+                        </div>
+
+                        <!-- Week 4 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week4-content" aria-expanded="true" aria-controls="week4-content">
+                            Week 4: CSS Layout
+                        </button>
+                        <div id="week4-content" class="accordion-collapse collapse" aria-labelledby="week4">
+                            <div class="accordion-body">
+                                Box Model and Layout Properties<br>
+                                Positioning Elements<br>
+                                Flexbox Layout<br>
+                                CSS Grid Layout<br>
+                                Responsive Web Design with Media Queries
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 5-6: JavaScript Fundamentals -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week5-6">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week5-6-content" aria-expanded="true" aria-controls="week5-6-content">
+                        Week 5-6: JavaScript Fundamentals
+                    </button>
+                </h2>
+                <div id="week5-6-content" class="accordion-collapse collapse" aria-labelledby="week5-6" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 5 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week5-content" aria-expanded="true" aria-controls="week5-content">
+                            Week 5: Introduction to JavaScript
+                        </button>
+                        <div id="week5-content" class="accordion-collapse collapse" aria-labelledby="week5">
+                            <div class="accordion-body">
+                                JavaScript Basics<br>
+                                Variables, Data Types, and Operators<br>
+                                Conditional Statements and Loops<br>
+                                Functions and Scope
+                            </div>
+                        </div>
+
+                        <!-- Week 6 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week6-content" aria-expanded="true" aria-controls="week6-content">
+                            Week 6: DOM Manipulation with JavaScript
+                        </button>
+                        <div id="week6-content" class="accordion-collapse collapse" aria-labelledby="week6">
+                            <div class="accordion-body">
+                                Understanding the Document Object Model (DOM)<br>
+                                Selecting and Modifying DOM Elements<br>
+                                Event Handling and Event Listeners<br>
+                                Working with Forms and Validation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 7-8: Bootstrap for Responsive Design -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week7-8">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week7-8-content" aria-expanded="true" aria-controls="week7-8-content">
+                        Week 7-8: Bootstrap for Responsive Design
+                    </button>
+                </h2>
+                <div id="week7-8-content" class="accordion-collapse collapse" aria-labelledby="week7-8" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 7 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week7-content" aria-expanded="true" aria-controls="week7-content">
+                            Week 7: Introduction to Bootstrap
+                        </button>
+                        <div id="week7-content" class="accordion-collapse collapse" aria-labelledby="week7">
+                            <div class="accordion-body">
+                                What is Bootstrap?<br>
+                                Setting up Bootstrap in Your Project<br>
+                                Grid System and Responsive Design<br>
+                                Bootstrap Components (Navbar, Forms, Buttons)
+                            </div>
+                        </div>
+
+                        <!-- Week 8 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week8-content" aria-expanded="true" aria-controls="week8-content">
+                            Week 8: Advanced Bootstrap
+                        </button>
+                        <div id="week8-content" class="accordion-collapse collapse" aria-labelledby="week8">
+                            <div class="accordion-body">
+                                Bootstrap Modals and Carousels<br>
+                                Customizing Bootstrap with Sass<br>
+                                Building a Responsive Website with Bootstrap
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 9-10: Building Dynamic Web Apps with React -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week9-10">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week9-10-content" aria-expanded="true" aria-controls="week9-10-content">
+                        Week 9-10: Building Dynamic Web Apps with React
+                    </button>
+                </h2>
+                <div id="week9-10-content" class="accordion-collapse collapse" aria-labelledby="week9-10" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 9 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week9-content" aria-expanded="true" aria-controls="week9-content">
+                            Week 9: Introduction to React
+                        </button>
+                        <div id="week9-content" class="accordion-collapse collapse" aria-labelledby="week9">
+                            <div class="accordion-body">
+                                What is React?<br>
+                                Setting up a React Development Environment<br>
+                                Components and Props<br>
+                                State and Lifecycle
+                            </div>
+                        </div>
+
+                        <!-- Week 10 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week10-content" aria-expanded="true" aria-controls="week10-content">
+                            Week 10: Advanced React
+                        </button>
+                        <div id="week10-content" class="accordion-collapse collapse" aria-labelledby="week10">
+                            <div class="accordion-body">
+                                Handling Forms and User Input<br>
+                                Routing with React Router<br>
+                                Managing Global State with Context API<br>
+                                Building a React Application
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 11-12: Server-Side Development with PHP and MySQL -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="week11-12">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week11-12-content" aria-expanded="true" aria-controls="week11-12-content">
+                        Week 11-12: Server-Side Development with PHP and MySQL
+                    </button>
+                </h2>
+                <div id="week11-12-content" class="accordion-collapse collapse" aria-labelledby="week11-12" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Week 11 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week11-content" aria-expanded="true" aria-controls="week11-content">
+                            Week 11: Introduction to PHP
+                        </button>
+                        <div id="week11-content" class="accordion-collapse collapse" aria-labelledby="week11">
+                            <div class="accordion-body">
+                                PHP Basics and Syntax<br>
+                                Working with Variables and Data Types<br>
+                                Conditional Statements and Loops<br>
+                                PHP Functions and Forms
+                            </div>
+                        </div>
+
+                        <!-- Week 12 -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week12-content" aria-expanded="true" aria-controls="week12-content">
+                            Week 12: Database Development with MySQL
+                        </button>
+                        <div id="week12-content" class="accordion-collapse collapse" aria-labelledby="week12">
+                            <div class="accordion-body">
+                                Introduction to MySQL and Database Design<br>
+                                PHP-MySQL Integration<br>
+                                Performing CRUD Operations<br>
+                                Building a Dynamic Web Application
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Project and Conclusion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="final-project">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#final-project-content" aria-expanded="true" aria-controls="final-project-content">
+                        Final Project and Conclusion
+                    </button>
+                </h2>
+                <div id="final-project-content" class="accordion-collapse collapse" aria-labelledby="final-project" data-bs-parent="#courseAccordion">
+                    <div class="accordion-body">
+                        <!-- Final Project -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#final-project-details" aria-expanded="true" aria-controls="final-project-details">
+                            Final Project
+                        </button>
+                        <div id="final-project-details" class="accordion-collapse collapse" aria-labelledby="final-project-details">
+                            <div class="accordion-body">
+                                Students work on a final web development project that incorporates all the skills learned throughout the course.
+                            </div>
+                        </div>
+
+                        <!-- Conclusion and Beyond -->
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#conclusion-details" aria-expanded="true" aria-controls="conclusion-details">
+                            Conclusion and Beyond
+                        </button>
+                        <div id="conclusion-details" class="accordion-collapse collapse" aria-labelledby="conclusion-details">
+                            <div class="accordion-body">
+                                Review of Key Concepts<br>
+                                Web Development Best Practices<br>
+                                Resources for Further Learning<br>
+                                Career Paths in Web Development
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                                
                             
                             
    
@@ -279,7 +501,7 @@ https://templatemo.com/tm-590-topic-listing
                         </p>
                     </div>
 
-                    
+                   
 
                        
                         
