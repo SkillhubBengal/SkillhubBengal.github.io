@@ -284,7 +284,9 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: var(--secondary-color);
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 
 .navbar {
@@ -524,7 +526,8 @@ strong {
   TOPICS              
 -----------------------------------------*/
 .featured-section {
-  background-color: var(--secondary-color);
+  background-color: #C850C0;
+  background-image: linear-gradient(118deg, #4153d0 0%, #C850C0 46%, #FFCC70 100%);
   border-radius: 0 0 100px 100px;
   padding-bottom: 100px;
 }
